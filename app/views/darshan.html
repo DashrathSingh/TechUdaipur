@@ -49,7 +49,7 @@
     }
 
     .darshan {
-       
+        color:#fff;
     }
 
     .darshan:first-letter {
@@ -62,17 +62,50 @@
          border: 1px solid #dddddd;
     vertical-align: middle !important;
     font-size: 15px;
+    color:#fff;
     }
      .mainloader {
         top:45%;
     }
-     .head {
+
+    .head {
         color: #fff;
     margin-top: -29px;
     text-align: center;
     font-family: cursive;
     font-size:20px;
     }
+
+
+    .well {
+        padding:2px !important;
+        margin-top:-5px;
+    }
+
+    .traindata {
+       
+    background: #fff;
+    padding: 5px;
+    border-bottom:1px solid #ccc;
+    }
+
+        .traindata p {
+
+            font-size:13px;
+        }
+
+        .traindata h4 {
+            font-size:16px;
+        }
+    .dropdown-toggle {
+        display:none;
+    }
+
+    .row {
+        margin-left:auto !important;
+        margin-right:auto !important;
+    }
+   
 </style>
 
 <div data-ng-if="isload==true || isload=='true'" class="mainloader">
@@ -85,9 +118,32 @@
 </div>
 <div class="well" style="text-align:center">
  
+  
 
+   <div style="text-align:left;" class="traindata" data-ng-repeat="obj in FlightTimings | filter : Search">
+        <h4>{{obj.RouteName}} </h4>
+        <div class="row">
 
-    <h1> Coming soon :) </h1>
+            <div style="padding-left:0;" class="col-xs-6">
+                <p>From : {{obj.From}}</p>
+                <p>Fligh No : <b> {{obj.FlightNumber}} </b></p>
+               
+                  <p>Dept. Time : {{obj.DepartureTime}}</p>
+             
+               
+            </div>
+             
+            <div style="padding-right:0;" class="col-xs-6">
+                <p> Land. Place : {{obj.To}}</p>
+            
+                <p> Duration : {{obj.duration}}</p>
+                
+                  <p>Arr. Time : {{obj.ArrivalTime}}</p>
+               
+            </div>
+        </div>
+
+    </div>
  
    
     
