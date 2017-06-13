@@ -215,7 +215,7 @@ app.controller('loginController', ['$scope','localStorageService', '$location', 
 
     $scope.darshan = function () {
 
-        $("#myModal2").modal('hide');
+      
      
       
         $location.path('/darshan');
@@ -225,15 +225,11 @@ app.controller('loginController', ['$scope','localStorageService', '$location', 
 
     $scope.bus = function () {
      
-        $("#myModal2").modal('hide');
-     
+        
         $location.path('/bus');
         $scope.$apply();
 
-        setTimeout(function () {
-            alert("In");
-            $("#myModal2").modal('hide');
-        },200)
+    
     }
 
                 
@@ -242,9 +238,6 @@ app.controller('loginController', ['$scope','localStorageService', '$location', 
 
     $scope.train = function () {
     
-      
-        $("#myModal2").modal('hide');
-
         $location.path('/train');
         $scope.$apply();
     }
