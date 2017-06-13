@@ -215,7 +215,7 @@ app.controller('loginController', ['$scope','localStorageService', '$location', 
 
     $scope.darshan = function () {
 
-      
+        $(".modal-backdrop").hide();
      
       
         $location.path('/darshan');
