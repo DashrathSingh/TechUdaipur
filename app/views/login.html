@@ -370,6 +370,10 @@ background-color: rgba(0,0,0,0.8);
         </div>
     </div>
      </div>
+    <div>
+        <br />
+        <br />
+    </div>
 </div>
 
 
@@ -397,8 +401,24 @@ background-color: rgba(0,0,0,0.8);
 </div>
 
 
-<a class="cd-top" onclick="scrollToTop()" title="Go to top"><i class="fa fa-chevron-up"></i></a>
-<a ng-click="OpenmenuModal()" class="menubtn pink waves-effect btn-info btn-floating ng-scope" >
+
+<table style="width:100%; position:fixed; left:0; right:0; position:fixed; bottom:0; background:#fff; color:#e91e63; text-align:center;">
+    <tr>
+        <td style="border-right:1px solid #ccc">
+            <p data-ng-click="bus()" style="padding-top:10px;"><i style="color:#e91e63" class="fa fa-bus"></i>  BUS</p>
+        </td>
+        <td style="border-right:1px solid #ccc">
+            <p data-ng-click="train()" style="padding-top:10px;">  <i style="color:#e91e63" class="fa fa-train"></i>  Train</p>
+        </td>
+        <td>
+            <p data-ng-click="darshan()" style="padding-top:10px;"><i style="color:#e91e63" class="fa fa-plane"></i> Flight </p>
+        </td>
+    </tr>
+</table>
+
+
+<a style="display:none;" class="cd-top" onclick="scrollToTop()" title="Go to top"><i class="fa fa-chevron-up"></i></a>
+<a style="display:none;" ng-click="OpenmenuModal()" class="menubtn pink waves-effect btn-info btn-floating ng-scope" >
       +
     </a>
 
