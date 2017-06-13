@@ -229,6 +229,11 @@ app.controller('loginController', ['$scope','localStorageService', '$location', 
      
         $location.path('/bus');
         $scope.$apply();
+
+        setTimeout(function () {
+            alert("In");
+            $("#myModal2").modal('hide');
+        },200)
     }
 
                 
