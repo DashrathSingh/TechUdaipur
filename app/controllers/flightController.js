@@ -1,6 +1,6 @@
 ﻿'use strict';
 app.controller('flightController', ['$scope', 'ordersService', function ($scope) {
-
+  
     $scope.FlightTimings = [];
     $scope.Searchstring = "";
    

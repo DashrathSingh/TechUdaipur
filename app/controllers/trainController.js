@@ -1,7 +1,7 @@
 ﻿'use strict';
 app.controller('trainController', ['$scope', 'localStorageService', '$location', 'authService', 'ngAuthSettings', function ($scope, localStorageService, $location, authService, ngAuthSettings) {
 
-
+   
     $scope.GetTrainTimings = function () {
         $scope.isload = true;
         $.ajax({

@@ -1,7 +1,7 @@
 ﻿'use strict';
 app.controller('darshanController', ['$scope', 'localStorageService', '$location', 'authService', 'ngAuthSettings', function ($scope, localStorageService, $location, authService, ngAuthSettings) {
 
-
+   
     $scope.GetDarshanTimings = function () {
         $scope.isload = true;
         $.ajax({

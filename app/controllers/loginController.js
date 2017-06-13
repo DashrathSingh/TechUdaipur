@@ -214,12 +214,19 @@ app.controller('loginController', ['$scope','localStorageService', '$location', 
     }
 
     $scope.darshan = function () {
+
+        $("#myModal2").modal('hide');
+     
+      
         $location.path('/darshan');
         $scope.$apply();
     }
 
 
     $scope.bus = function () {
+     
+        $("#myModal2").modal('hide');
+     
         $location.path('/bus');
         $scope.$apply();
     }
@@ -230,6 +237,9 @@ app.controller('loginController', ['$scope','localStorageService', '$location', 
 
     $scope.train = function () {
     
+      
+        $("#myModal2").modal('hide');
+
         $location.path('/train');
         $scope.$apply();
     }
@@ -251,6 +261,13 @@ app.controller('loginController', ['$scope','localStorageService', '$location', 
         $location.path('/shop');
         $scope.$apply();
     }
+
+
+
+
+
+
+
 
     $scope.InIt();
 

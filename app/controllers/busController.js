@@ -1,7 +1,7 @@
 ﻿'use strict';
 app.controller('busController', ['$scope', 'localStorageService', '$location', 'authService', 'ngAuthSettings', function ($scope, localStorageService, $location, authService, ngAuthSettings) {
 
-
+  
     $scope.GetBusTimings = function () {
         $scope.isload = true;
         $.ajax({
