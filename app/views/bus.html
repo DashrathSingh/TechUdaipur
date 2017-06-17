@@ -156,4 +156,13 @@
 
 
 
-
+<script>
+    $(document).ready(function () {
+        var allSelectElements = document.getElementsByTagName('select');
+        for (var i = 0; i < allSelectElements.length; i++) {
+            allSelectElements[i].addEventListener('touchstart', function (e) {
+                e.stopPropagation();
+            }, false);
+        }
+    });
+</script>
