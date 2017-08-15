@@ -283,23 +283,11 @@ background-color: rgba(0,0,0,0.8);
     </a>
     <div class="swiper-container">
 <div class="swiper-wrapper">
-
-   <!-- <div ng-if="dynamicimage==false" style="background:#fff;" class="swiper-slide "> 
-      <img style="width:100%; height:inherit"  src="img/36.jpg" alt="Alternate Text" />
-</div>
-
-     <div ng-if="dynamicimage==true" style="background:#fff;" class="swiper-slide" ng-repeat="_obj in FeaturedImages"> 
-
-         <img style="width:100%; height:inherit" src="{{FeaturedImageUrl}}{{_obj.ImagePath}}" data-ng-if="_obj.ImagePath!=null && _obj.ImagePath!=''" imageonload1 />
-         <img data-ng-if="_obj.ImagePath==null || _obj.ImagePath==''" src="img/23.jpg" alt="Alternate Text" />
-</div>-->
-
-     
-
-
-   
-
-    <div style="background:#fff;" class="swiper-slide">
+    <div ng-if="dynamicimage==false" style="background:#fff;" class="swiper-slide ">
+        <img style="width:100%; height:inherit" src="img/102.jpg" alt="Alternate Text" />
+    </div>
+   <!--
+ <div style="background:#fff;" class="swiper-slide">
         <img style="width:100%; height:inherit" src="img/101.jpg" alt="Alternate Text" />
     </div>
 
@@ -312,6 +300,18 @@ background-color: rgba(0,0,0,0.8);
      <div style="background:#fff;" class="swiper-slide "> 
       <img style="width:100%; height:inherit"  src="img/103.jpg" alt="Alternate Text" />
 </div>
+    -->
+
+     
+
+ <div ng-if="dynamicimage==true"  style="background:#fff;" class="swiper-slide" ng-repeat="_obj in FeaturedImages"> 
+
+         <img style="width:100%; height:inherit" src="{{FeaturedImageUrl}}{{_obj.ImagePath}}" data-ng-if="_obj.ImagePath!=null && _obj.ImagePath!=''" imageonload1 />
+         <img data-ng-if="_obj.ImagePath==null || _obj.ImagePath==''" src="img/23.jpg" alt="Alternate Text" />
+</div>
+   
+
+   
 
 </div>
  
